@@ -1,28 +1,15 @@
-<!--
- * @Author: your name
- * @Date: 2021-05-31 11:51:00
- * @LastEditTime: 2021-05-31 21:59:11
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /vite-vue3-ts/src/App.vue
--->
 <template>
-<div>
-  <a-button type="primary">Primary</a-button>
-</div>
+  <router-view></router-view>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-
 export default defineComponent({
-  name: 'App',
-  components: {
-  }
+  name: 'App'
 })
 </script>
 
-<style>
+<style lang="less" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,5 +17,7 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  width: 100%;
+  height: 100%;
 }
 </style>

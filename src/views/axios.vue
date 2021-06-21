@@ -1,17 +1,33 @@
-<!--
- * @Author: your name
- * @Date: 2021-05-31 14:54:22
- * @LastEditTime: 2021-05-31 22:00:49
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /vite-vue3-ts/src/views/axios.vue
--->
 <template>
-<div class="axios"></div>
+  <div class="home">
+    123
+    <div class="list">哈哈哈</div>
+  </div>
 </template>
+<script lang="ts">
+import { defineComponent } from 'vue'
+import axios from '../utils/axios'
 
-<script>
-export default {}
+export default defineComponent({
+  setup () {
+    axios
+      .get('/users/XPoet')
+      .then((res) => {
+        console.log('res: ', res)
+      })
+      .catch((err) => {
+        console.log('err: ', err)
+      })
+  }
+})
 </script>
 
-<style></style>
+<style lang="less" scoped>
+.home {
+  padding: 0;
+  margin: 0;
+  .list {
+    width: 100%;
+  }
+}
+</style>
