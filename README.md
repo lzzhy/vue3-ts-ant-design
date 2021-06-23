@@ -14,3 +14,6 @@ Vue3 跟 Vite 正式版发布有很长一段时间了，生态圈也渐渐丰富
 
 
 详细说明请看博客讲解：https://lzzhy.cn/vite+vue3+ts%20%E4%BB%8E0%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80%E6%A1%86%E6%9E%B6/
+
+
+* 新增codemirror代码编辑器

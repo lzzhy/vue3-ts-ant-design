@@ -1,0 +1,88 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js add @types/codemirro
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/qudian/.nvm/versions/node/v12.16.0/bin:/usr/local/sbin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.16.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@types%2fcodemirro: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:66988:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:140749:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:141721:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.10/libexec/lib/cli.js:141643:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (internal/streams/readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "vite-vue3-ts",
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "vue-tsc --noEmit && vite build",
+      "serve": "vite preview",
+      "prepare": "husky install"
+    },
+    "lint-staged": {
+      "*.{vue,js,ts}": "eslint --fix"
+    },
+    "dependencies": {
+      "ant-design-vue": "^2.1.6",
+      "axios": "^0.21.1",
+      "codemirror": "^5.62.0",
+      "vue": "^3.0.5",
+      "vue-router": "^4.0.8",
+      "vuex": "^4.0.1"
+    },
+    "devDependencies": {
+      "@commitlint/cli": "^12.1.4",
+      "@commitlint/config-conventional": "^12.1.4",
+      "@types/node": "^15.6.1",
+      "@typescript-eslint/eslint-plugin": "^4.25.0",
+      "@typescript-eslint/parser": "^4.25.0",
+      "@vitejs/plugin-vue": "^1.2.2",
+      "@vue/compiler-sfc": "^3.0.5",
+      "commitizen": "^4.2.4",
+      "cz-conventional-changelog": "^3.3.0",
+      "cz-customizable": "^6.3.0",
+      "eslint": "^7.27.0",
+      "eslint-config-airbnb-base": "^14.2.1",
+      "eslint-config-standard": "^16.0.3",
+      "eslint-plugin-import": "^2.23.4",
+      "eslint-plugin-node": "^11.1.0",
+      "eslint-plugin-promise": "^5.1.0",
+      "eslint-plugin-vue": "^7.10.0",
+      "husky": "^6.0.0",
+      "less": "^4.1.1",
+      "less-loader": "^9.0.0",
+      "lint-staged": "^11.0.0",
+      "prettier": "^2.3.0",
+      "typescript": "^4.1.3",
+      "vite": "^2.3.4",
+      "vue-tsc": "^0.0.24"
+    },
+    "config": {
+      "commitizen": {
+        "path": "./node_modules/cz-customizable"
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

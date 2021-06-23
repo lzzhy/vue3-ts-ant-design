@@ -12,7 +12,7 @@
           {{item.name}}
         </template>
         <a-menu-item v-for="subMenu in item.children" :key="subMenu.name">
-          {{subMenu.name}}
+          <router-link :to="subMenu.path">{{subMenu.name}}</router-link>
         </a-menu-item>
       </a-sub-menu>
     </a-menu>
@@ -26,16 +26,26 @@ export default defineComponent({
   setup () {
     const menus = [
       {
-        name: '数据集管理',
-        icon: '',
+        name: 'vue3',
         path: '/home',
         component: 'home',
         children: [
           {
-            name: '创建数据集',
-            icon: '',
+            name: 'vue',
             path: '/home',
             component: ''
+          }
+        ]
+      },
+      {
+        name: '常用方法封装',
+        path: '/commonFunction',
+        component: 'commonFunction',
+        children: [
+          {
+            name: 'commonFunction',
+            path: '/commonFunction',
+            component: 'commonFunction'
           }
         ]
       }
@@ -43,7 +53,7 @@ export default defineComponent({
 
     return {
       selectedKeys2: ref<string[]>(['2']),
-      openKeys: ref<string[]>(['数据集管理']),
+      openKeys: ref<string[]>(['vue3']),
       menus
     }
   }

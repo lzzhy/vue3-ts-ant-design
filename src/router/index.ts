@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import index from '@/views/index.vue'
 import axios from '@/views/axios.vue'
+import commonFunction from '@/views/commonFunction.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -12,6 +13,11 @@ const routes: Array<RouteRecordRaw> = [
         path: '/',
         name: 'axios',
         component: axios
+      },
+      {
+        path: '/commonFunction',
+        name: 'commonFunction',
+        component: commonFunction
       }
     ]
   }
